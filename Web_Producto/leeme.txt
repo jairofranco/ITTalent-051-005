@@ -1,0 +1,8 @@
+Debe llevar pagina WEB (Pagina informativa del producto)
+
+HTML 
+CSS
+JS
+Jquery 
+
+Para la descripcion del producto
