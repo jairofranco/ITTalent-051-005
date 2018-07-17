@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Quota:</strong>
+  <%= @schedule_course.quota %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @schedule_course.start_time %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @schedule_course.price %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @schedule_course.state %>
+</p>
+
+<p>
+  <strong>Final time:</strong>
+  <%= @schedule_course.final_time %>
+</p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @schedule_course.course %>
+</p>
+
+<%= link_to 'Edit', edit_schedule_course_path(@schedule_course) %> |
+<%= link_to 'Back', schedule_courses_path %>

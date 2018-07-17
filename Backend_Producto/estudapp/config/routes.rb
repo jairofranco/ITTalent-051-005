@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  resources :clients
+  resources :pre_registrations
+  resources :surveys
+  resources :schedule_courses
+  resources :courses
+  resources :rols
+  resources :categories
   devise_for :users
 #  devise_for :installs
 #  get 'welcome/index'

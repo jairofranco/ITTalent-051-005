@@ -1,0 +1,37 @@
+<%= form_for(pre_registration) do |f| %>
+  <% if pre_registration.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pre_registration.errors.count, "error") %> prohibited this pre_registration from being saved:</h2>
+
+      <ul>
+      <% pre_registration.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :schedule_course %>
+    <%= f.datetime_select :schedule_course %>
+  </div>
+
+  <div class="field">
+    <%= f.label :state %>
+    <%= f.text_field :state %>
+  </div>
+
+  <div class="field">
+    <%= f.label :client_id %>
+    <%= f.text_field :client_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :schedule_course_id %>
+    <%= f.text_field :schedule_course_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

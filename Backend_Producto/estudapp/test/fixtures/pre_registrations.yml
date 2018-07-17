@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  schedule_course: 2018-07-17 15:34:47
+  state: MyString
+  client: one
+  schedule_course: one
+
+two:
+  schedule_course: 2018-07-17 15:34:47
+  state: MyString
+  client: two
+  schedule_course: two

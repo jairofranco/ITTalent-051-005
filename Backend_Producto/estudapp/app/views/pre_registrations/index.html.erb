@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pre Registrations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Schedule course</th>
+      <th>State</th>
+      <th>Client</th>
+      <th>Schedule course</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pre_registrations.each do |pre_registration| %>
+      <tr>
+        <td><%= pre_registration.schedule_course %></td>
+        <td><%= pre_registration.state %></td>
+        <td><%= pre_registration.client %></td>
+        <td><%= pre_registration.schedule_course %></td>
+        <td><%= link_to 'Show', pre_registration %></td>
+        <td><%= link_to 'Edit', edit_pre_registration_path(pre_registration) %></td>
+        <td><%= link_to 'Destroy', pre_registration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pre Registration', new_pre_registration_path %>
